@@ -1,0 +1,26 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headedTest":"npm run test -- --headed",
+    "chromeTest":"npm run test -- --browser chrome",
+    "recordDashboardTest":"npm run test -- --record --key 2a2e3860-1f14-46fb-903b-073755c06f3a --reporter mochawesome",
+    "GreenKartTest":"npm run test -- --spec \"cypress/integration/Test Practice/*\""
+
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^9.2.1",
+    "mochawesome": "^7.1.2"
+  }
+}
