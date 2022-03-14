@@ -12,7 +12,7 @@ cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
 //but to grab text of them and do verification
 //check this
 cy.get('#alertbtn').click()
-//using window:alert event for popups that we need to accept
+//using window:alert event for popups that we need to accepted
 cy.on('window:alert',(str) =>
 {
 expect(str).to.equal("Hello , share this practice page and share your knowledge")
